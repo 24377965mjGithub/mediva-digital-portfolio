@@ -171,11 +171,11 @@
       <div class="container">
           <div class="px-vw-5 py-vh-5">
             <div class="row d-flex align-items-center">
-              <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
+              <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-up">
                 <span class="h5 text-secondary fw-lighter">What we do</span>
                 <h2 class="display-4">We design, develop, and deliver exceptional web solutions tailored to your needs, ensuring your online success.</h2>
               </div>
-              <div class="col-12 col-lg-5" data-aos="fade-left">
+              <div class="col-12 col-lg-5" data-aos="zoom-in">
                 <h3 class="pt-5">Web Design</h3>
                 <p class="text-secondary">We encompasses the creation and arrangement of visual elements, user interfaces, and content to enhance the usability and aesthetic appeal of websites.<br>
                   <a href="./web-design.html" class="link-fancy link-fancy-light me-2">Tell me more</a>
@@ -570,7 +570,7 @@
           </a>
 
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 border-end border-dark">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <span class="h6">Company</span>
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -588,7 +588,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 border-end border-dark">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <span class="h6">Services</span>
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -649,6 +649,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="./js/confetti.js"></script>
+  <script src="./js/luxy.min.js"></script>
   <script>
     AOS.init({
       duration: 800, // values from 0 to 3000, with step 50ms
@@ -661,6 +662,8 @@
             scrollTop: $("#ourWorks").offset().top
         }, 500);
       })
+
+      luxy.init();
 
     });
   </script>
