@@ -75,6 +75,13 @@
 
 <body class="bg-black text-white mt-0">
 
+
+  <canvas id="fallingLeavesCanvas" style="margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;"></canvas>
   <!-- Header------------------------------ -->
 
   <nav class="navbar navbar-dark bg-black fixed-top px-vw-5">
@@ -110,7 +117,7 @@
 
     <section>
       <div class="container">
-        <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade">
+        <div class="w-100 overflow-hidden position-relative text-white" data-aos="fade">
           <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
           <div class=" py-vh-4 position-relative mt-5 px-vw-5 text-center">
             <div class="row d-flex align-items-center justify-content-center py-vh-5">
@@ -641,6 +648,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="./js/confetti.js"></script>
   <script>
     AOS.init({
       duration: 800, // values from 0 to 3000, with step 50ms
@@ -653,6 +661,7 @@
             scrollTop: $("#ourWorks").offset().top
         }, 500);
       })
+
     });
   </script>
 
