@@ -670,6 +670,10 @@
         $('html, body').animate({
             scrollTop: $("#ourWorks").offset().top
         }, 500);
+
+        $.get('https://medivadigital.com/backend', function (res) {
+          console.log(res);
+        })
       })
     });
   </script>
